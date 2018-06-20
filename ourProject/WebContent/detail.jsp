@@ -13,57 +13,38 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 <script src="./plugin/cke/ckeditor.js"></script>
 <title>Insert title here</title>
-
-
-
-
 </head>
-	<h1>입력페이지</h1>
+	<h1>상세보기</h1>
     <body>
-        <form>
         	<div>
         		<label for="">글쓴날짜</label>
-        		<input type="date" name="" id="" class="" value="" readonly="readonly"/>
+        		<div class="well"></div>
         	</div>
         	<div>
         		<label for="">이벤트제목</label>
-        		<input type="text" name="" id="" class="" value=""/>
+        		<div class="well"></div>
         	</div>
         	<div>
         		<label for="">대표이미지</label>
-        		<input type="file" name="" id="" class="" value=""/>
+        		<div class="well"></div>
         	</div>
 			<div>        	
-	            <textarea name="" id="editor1" rows="10" cols="80">${bean.content }</textarea>
+        		<div class="well">본문내용</div>
             </div>
-            <div>
-        		<label for="">이벤트 참가이미지</label>
-        		<input type="file" name="" id="" class="" value=""/>
-            </div>
+        	<div>
+        		<div class="well"><a href="">참가이미지</a></div>
+        	</div>
             <div>
             	<label for="">해시태그</label>
-            	<input type="text" id="" hashtag="off"/>
-            	<input type="hidden" name="해쉬태그" value=""/>
-            </div>
-            <div>
-            	<a href="" id="myform-submit" role="btn" class="btn btn-default">입력</a>
-            	<a href="" id="myform-reset" role="btn" class="btn btn-danger">리셋</a>
+				<div class="badge">#태그1</div>
+				<div class="badge">#태그2</div>
+				<div class="badge">#태그3</div>
+				<div class="badge">#태그4</div>
+				<div class="badge">#태그5</div>
             </div>
             
-		</form>
-            <script>
-                // Replace the <textarea id="editor1"> with a CKEditor
-                // instance, using default configuration.
-                // https://docs.ckeditor.com/ckeditor4/latest/guide/dev_installation.html
-                // https://docs.ckeditor.com/ckeditor4/latest/guide/dev_configuration.html
-                CKEDITOR.replace( 'editor1',{
-                	width : '50%'
-                });
-            </script>
 
 
 </body>
